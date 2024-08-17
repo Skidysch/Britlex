@@ -10,11 +10,13 @@
 	<nav>
 		<ul class="flex gap-10">
 			<li v-for="item in headerList" :key="item">
-				<a href="#" class="font-medium text-xl">{{ item }}</a>
+				<a href="#" class="font-medium text-xl text-gunmetal-gray">{{
+					item
+				}}</a>
 			</li>
 		</ul>
 	</nav>
-	<button class="px-14 py-4 rounded text-2xl border-2 border-black">
+	<button class="px-14 py-4 rounded-md text-2xl border-2 border-black">
 		Let's Talk
 	</button>
 </template>

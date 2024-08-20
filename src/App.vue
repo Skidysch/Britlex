@@ -10,7 +10,7 @@
 
 <template>
 	<header
-		class="container sticky top-0 flex justify-between pt-14 items-center"
+		class="container sticky top-0 z-50 flex justify-between pt-4 md:pt-14 items-center"
 	>
 		<Header />
 	</header>

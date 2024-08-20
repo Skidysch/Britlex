@@ -5,8 +5,8 @@
 			class="w-20 sm:w-24 xl:w-28 h-10 sm:h-12 xl:h-14"
 			src="../assets/logo.svg"
 	/></a>
-	<nav>
-		<ul class="flex gap-10">
+	<nav class='max-md:hidden'>
+		<ul class="flex gap-3 lg:gap-10">
 			<li v-for="item in headerList" :key="item">
 				<a
 					href="#"
@@ -17,12 +17,14 @@
 		</ul>
 	</nav>
 	<button
-		class="px-10 xl:px-14 py-3 xl:py-4 rounded-md text-lg xl:text-2xl border-2 border-black"
+		class="max-md:hidden px-10 xl:px-14 py-3 xl:py-4 rounded-md text-lg xl:text-2xl border-2 border-black"
 	>
 		Let's Talk
 	</button>
+	<BurgerButton />
 </template>
 
 <script setup>
+    import BurgerButton from './BurgerButton.vue'
 	const headerList = ['Home', 'Skills', 'About Us', 'Pricing', 'Contacts']
 </script>

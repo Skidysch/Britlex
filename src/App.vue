@@ -14,7 +14,7 @@
 	>
 		<Header />
 	</header>
-	<main class="container flex flex-col flex-grow">
+	<main class="flex flex-col flex-grow">
 		<HeroSection />
 		<SkillsSection />
 		<AboutSection />
@@ -22,7 +22,7 @@
 		<ContactSection />
 	</main>
 	<footer
-		class="mt-32 container flex justify-between items-center border-t border-[#c4c4c4] pt-8 pb-16"
+		class="mt-16 sm:mt-24 lg:mt-32 container flex max-sm:flex-col justify-between gap-4 items-center border-t border-[#c4c4c4] pt-6 xl:pt-8 pb-12 xl:pb-16"
 	>
 		<Footer />
 	</footer>

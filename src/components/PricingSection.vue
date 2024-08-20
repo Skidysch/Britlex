@@ -1,15 +1,19 @@
 <template>
-	<section class="mt-48 flex flex-col items-center gap-20">
-		<h2 class="font-semibold text-5xl">Pricing</h2>
-		<ul class="grid grid-cols-3 gap-10">
-			<li v-for="item in pricingList" class='self-end h-full' :key="item.title">
-				<PricingItem v-bind="item" />
+	<section
+		class="container flex flex-col gap-20 xl:gap-28 items-center mt-20 md:mt-24 xl:mt-28"
+	>
+		<h2 class="font-semibold text-2xl sm:text-3xl lg:text-4xl xl:text-5xl">
+			Pricing
+		</h2>
+		<ul class="flex flex-col md:grid md:grid-cols-3 gap-10">
+			<li v-for="item in pricingList" class="self-end h-full" :key="item.title">
+				<PricingCard v-bind="item" />
 			</li>
 		</ul>
 	</section>
 </template>
 <script setup>
-	import PricingItem from './PricingItem.vue'
+	import PricingCard from './PricingCard.vue'
 
 	const pricingList = [
 		{

@@ -2,15 +2,13 @@
 	<a href="/"
 		><img
 			alt="Britlex logo"
-			class="logo"
+			class="w-20 sm:w-24 xl:w-28 h-10 sm:h-12 xl:h-14"
 			src="../assets/logo.svg"
-			width="106"
-			height="55"
 	/></a>
 	<nav>
-		<ul class="flex gap-5">
+		<ul class="flex gap-2 sm:gap-5">
 			<li v-for="item in footerList" :key="item">
-				<a href="#" class="text-2xl text-[#8F95A5]">{{ item }}</a>
+				<a href="#" class="text-[.6875rem] sm:text-xs md:text-[.8125rem] lg:text-base xl:text-2xl font-medium text-[#8F95A5]">{{ item }}</a>
 			</li>
 		</ul>
 	</nav>

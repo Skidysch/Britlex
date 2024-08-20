@@ -30,5 +30,5 @@ body {
 }
 
 .container {
-	@apply max-w-[1340px] mx-auto;
+	@apply px-3 sm:px-8 md:px-10 max-w-[640px] sm:max-w-[768px] md:max-w-[1024px] lg:max-w-[1280px] xl:max-w-[1420px] mx-auto;
 }
